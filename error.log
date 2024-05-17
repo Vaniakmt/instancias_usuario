@@ -1,0 +1,49 @@
+Error procesando la línea: {"nombre": "Nissy", "apellido": "Dell Casa", "email": "ndellcasa2@godaddy.com", "genero": "Female"
+
+Expecting ',' delimiter: line 2 column 1 (char 99)
+Traceback (most recent call last):
+  File "/home/vaniamt/proyectosBootcamp/instancias_usuario/script.py", line 11, in crear_instancias_usuarios
+    datos_usuario = json.loads(linea)  # Intenta decodificar la línea como JSON
+  File "/home/vaniamt/.pyenv/versions/3.10.10/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/home/vaniamt/.pyenv/versions/3.10.10/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/vaniamt/.pyenv/versions/3.10.10/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 2 column 1 (char 99)
+
+Error procesando la línea: {"nombre": "Marj", "apellido": "Impy", email": "mimpy5@youku.com", "genero": "Non-binary"}
+
+Expecting property name enclosed in double quotes: line 1 column 40 (char 39)
+Traceback (most recent call last):
+  File "/home/vaniamt/proyectosBootcamp/instancias_usuario/script.py", line 11, in crear_instancias_usuarios
+    datos_usuario = json.loads(linea)  # Intenta decodificar la línea como JSON
+  File "/home/vaniamt/.pyenv/versions/3.10.10/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/home/vaniamt/.pyenv/versions/3.10.10/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/vaniamt/.pyenv/versions/3.10.10/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 40 (char 39)
+
+Error procesando la línea: {"nombre": "Robena", "apellido": "Selcraig", "email": "rselcraig7@jugem.jp", "genero": Female}
+
+Expecting value: line 1 column 88 (char 87)
+Traceback (most recent call last):
+  File "/home/vaniamt/proyectosBootcamp/instancias_usuario/script.py", line 11, in crear_instancias_usuarios
+    datos_usuario = json.loads(linea)  # Intenta decodificar la línea como JSON
+  File "/home/vaniamt/.pyenv/versions/3.10.10/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/home/vaniamt/.pyenv/versions/3.10.10/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/vaniamt/.pyenv/versions/3.10.10/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 88 (char 87)
+
+Error creando instancia de Usuario con datos: {"nombre": "Inger", "apellido": "Baldcock", "genero": "Female"}
+Usuario.__init__() missing 1 required positional argument: 'email'
+Traceback (most recent call last):
+  File "/home/vaniamt/proyectosBootcamp/instancias_usuario/script.py", line 12, in crear_instancias_usuarios
+    usuario = Usuario(**datos_usuario)  # Intenta crear una instancia de Usuario
+TypeError: Usuario.__init__() missing 1 required positional argument: 'email'
+
